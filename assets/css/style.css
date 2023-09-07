@@ -1,6 +1,6 @@
 
 :root {
-    background-color: rgb(51, 57, 63);
+ /*variables*/   
     --background: rgb(51, 57, 63);
     --hotpink: rgb(232, 102, 236);
     --border: white;
@@ -8,14 +8,16 @@
     --border-style: 3px solid white;
     --objectbackground: #303F54;
     --lighterbackground: #bac2f0;
-        
-    font-size: 16px;
+    --heading:  #b29bf1;
+    
+    background-color: rgb(51, 57, 63);
+    font-size: 18px;
     color: var(--fontcolor);
     font-family:Arial, Helvetica, sans-serif;
 }
-/*-----------------------------------*/
-/*Header*/
-/*-----------------------------------*/
+/*------------------*/
+/*------Header------*/
+/*------------------*/
 
 header {
   /*  display: flex;
@@ -30,6 +32,7 @@ header {
 header h1 {
     font-size: 3rem;
     padding: 10px;
+    color: var(--heading);
 }
 
 header p {
@@ -66,18 +69,17 @@ main {
 #project-cards {
     flex: 5;
     display: flex;    
-    flex-wrap: wrap;
-    margin-top: px;
+    flex-wrap: wrap;    
 }
 
 /*project cards*/
 .card {     
     border: 3px solid var(--border);
-    border-radius: 5px;
-           
+    border-radius: 5px;           
     padding: 15px;
     margin: 10px 10px 10px 10px;
     background-color: var(--objectbackground);
+    color: var(--fontcolor);
 }
 
 /*make first project card span full width*/
@@ -100,7 +102,7 @@ main {
     border-radius: 5px;
     padding: 5px;
     margin: -30px 0px 0px 0px;
-    color: var(--fontcolor);
+    color: var(--heading);
     font-family:Arial, Helvetica, sans-serif;
     text-align: center;
 }
@@ -123,12 +125,15 @@ pre {
     background-color: royalblue    
 }
 
+/* center photos horizontally in a block style container*/
+div {
+    text-align: center;
+}
+
 /* Project card photos */
 .cardphoto {
-
     height: auto;
     width: 90%;
-
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;     
@@ -142,14 +147,14 @@ pre {
 
 .cardphoto:active {
     box-shadow: 10 5 5 blue
-
 }
 
 
-/*-----*/
-/*Aside*/
-/*-----*/
+/*---------------*/
+/*Aside Container*/
+/*---------------*/
 
+/*About me section within Aside*/
 aside {
     flex: 1 0 150px;   
     display: flex;
@@ -167,6 +172,7 @@ aside {
 aside h2 {
     font-size: 2rem;
     padding: 10px;
+    color: var(--heading);
 
 }
 
@@ -180,14 +186,44 @@ aside p {
 .photo {
 
     height: auto;
-    width: 90%;
-
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;     
 }
 
+/*-------------------------------*/
+/*Contact me section within Aside*/
+/*-------------------------------*/
+aside h4 {
+    font-size: 2rem;
+    padding: 10px;
 
+}
+
+.li {
+    padding: 5px;    
+}
+
+/* Contact details a background */
+
+#contact-me {
+
+    background-color: var(--lighterbackground);
+    border: 3px solid var(--lighterbackground);  
+    border-radius: 10px;
+    padding: 5px;
+    margin: 15px 10px 0px 10px;
+    color: darkblue;
+    text-align: center
+    width: 300px;
+}
+
+/*Add pseudo element before list items*/
+.li::before {
+    content: '\273A';
+    margin-right: 5px;
+}
 
 
 /*------*/
@@ -201,38 +237,15 @@ footer {
     padding: 5px;
     margin: 0px 10px 20px 10px;
     background-color: var(--objectbackground);
-    height: 200px;
-
-    justify-content: right;
+    height: 100px;        
 }
 
-footer h4 {
-    font-size: 2rem;
-    padding: 10px;
-
+footer p {
+    text-align: center;
+    padding: 20px;
 }
 
-.li {
-    padding: 5px;    
-}
-
-/* Contact details a background */
-
-footer ul {
-    background-color: var(--lighterbackground);
-    border: 3px solid var(--lighterbackground);  
-    border-radius: 10px;
-    padding: 5px;
-    margin: 0px 5px 0px 20px;
-    color: darkblue;
- 
-    width: 300px;
-
-
-}
-
-/*Add pseudo element before list items*/
-.li::before {
-    content: '\273A';
-    margin-right: 5px;
+.link:hover {
+    color: red;
+    font-weight: 600;
 }

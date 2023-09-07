@@ -10,54 +10,137 @@
     font-size: 16px;
     color: var(--fontcolor);
 }
+/*-----------------------------------*/
+/*Header*/
+/*-----------------------------------*/
 
 header {
+  /*  display: flex;
+    flex-wrap: wrap;*/
     border: 3px solid var(--border);
-    height: 200px;
+    border-radius: 5px;
     padding: 20px;
     margin: 20px;
 }
 
 header h1 {
-    font-size: 4rem;
+    font-size: 3rem;
+}
+
+#photome {
+    height: 200px;
+    /*display: inline-block;*/
+    float: right;
+    margin:  0px;
+    
     
 }
 
+
+/*-----------------------------------*/
+/*Main: container for aside and cards*/
+/*-----------------------------------*/
+
+/*Set flex wrap*/
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+
 /*---------------------------*/
-/*Formatting of project cards*/
+/*Container for project cards*/
 /*---------------------------*/
 
-/*format project card container*/
+/*project card container*/
 #project-cards {
+    flex: 5;
     display: flex;    
     flex-wrap: wrap;
     margin-top: 50px;
 }
 
-/*format project cards*/
+/*project cards*/
 .card {
     flex: 1 0 200px;
     border: 3px solid var(--border);
+    border-radius: 5px;
     height: 200px;
         
     padding: 10px;
-    margin: 5px;
+    margin: 20px;
+    margin-bottom: 30px;
 }
 
-/*format project card headings*/
+/*project card headings*/
 
-.card h2 {
+.card h3 {
     position: relative;
     background-color: var(--background);
-    margin-top: -30px;
-    color:  var(--hotpink);
+    
     border: 3px solid white;  
     border-radius: 5px;
     padding: 5px;
+    margin-top: -30px;
+
+    color:  var(--hotpink);
     font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 
-/*format project card paragraphs*/
+/*project card paragraphs*/
 .card p {
     padding: 10px;
+}
+
+/*format project card pre*/
+pre {
+    background-color: royalblue    
+}
+
+
+/*-------------------*/
+/*Container for aside*/
+/*-------------------*/
+
+aside {
+    flex: 1;    
+    
+    border: 3px solid white;
+    border-radius: 5px;
+    background-color: darkgreen;
+    
+    /*height: 300px;*/
+
+    padding: 5px;
+    margin: 20px;
+
+}
+
+aside h2 {
+    font-size: 2rem;
+    background-color: darkgreen;
+
+    padding: 20px;
+
+}
+
+footer {
+    border: 3px solid white;  
+    border-radius: 5px;
+    padding: 5px;
+    margin: 20px;
+
+
+}
+
+/*------*/
+/*Footer*/
+/*------*/
+
+footer {
+    background-color: darkblue
 }

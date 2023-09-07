@@ -11,15 +11,16 @@ Please be aware that I am still building my portfolio, so many of the project ca
 
 My portfolio was built to meet the below user story and acceptance criteria
 
-### User Story
+## User Story
 
 ```
 AS AN employer
 I WANT to view a potential employee's deployed portfolio of work samples
 SO THAT I can review samples of their work and assess whether they're a good candidate for an open position
 ```
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Acceptance Criteria
+## Acceptance Criteria
 
 ```
 GIVEN I need to sample a potential employee's previous work:
@@ -42,6 +43,15 @@ THEN I am taken to that deployed application
 WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
 ```
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Screenshot
+
+The following are screenshots of the web application's appearance
+
+![Alt text](./assets/images/Screenshot1.jpg)
+![Alt text](./assets/images/Screenshot2.jpg)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

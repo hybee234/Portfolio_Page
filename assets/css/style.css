@@ -1,0 +1,63 @@
+/*html {font-size: 16px;}*/
+
+:root {
+    background-color: rgb(51, 57, 63);
+    --background: rgb(51, 57, 63);
+    --hotpink: rgb(232, 102, 236);
+    --border: white;
+    --fontcolor: lightblue;
+
+    font-size: 16px;
+    color: var(--fontcolor);
+}
+
+header {
+    border: 3px solid var(--border);
+    height: 200px;
+    padding: 20px;
+    margin: 20px;
+}
+
+header h1 {
+    font-size: 4rem;
+    
+}
+
+/*---------------------------*/
+/*Formatting of project cards*/
+/*---------------------------*/
+
+/*format project card container*/
+#project-cards {
+    display: flex;    
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+/*format project cards*/
+.card {
+    flex: 1 0 200px;
+    border: 3px solid var(--border);
+    height: 200px;
+        
+    padding: 10px;
+    margin: 5px;
+}
+
+/*format project card headings*/
+
+.card h2 {
+    position: relative;
+    background-color: var(--background);
+    margin-top: -30px;
+    color:  var(--hotpink);
+    border: 3px solid white;  
+    border-radius: 5px;
+    padding: 5px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/*format project card paragraphs*/
+.card p {
+    padding: 10px;
+}

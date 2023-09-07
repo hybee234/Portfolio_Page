@@ -105,6 +105,13 @@ main {
     text-align: center;
 }
 
+/*project card articles - centering horizontally*/
+.card a {    
+    display: inline-block;
+    text-align: center;
+}
+
+
 /*project card paragraphs*/
 .card p {
     padding: 10px;    
@@ -145,7 +152,9 @@ aside p {
 
 }
 
-#photome {
+/* Centering the photo within the box */
+.photo {
+
     height: auto;
     width: 90%;
 

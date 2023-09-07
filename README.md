@@ -1,40 +1,48 @@
-<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
+
 <a name="readme-top"></a>
 
-# Coding BootCamp Challenge 1 - HTML, CSS Code Refactor
+# Huber Heats Portfolio Page
 
 ## Description
 
-This project aims to address Challenge 1 of the Coding Bootcamp with Monash. Students are provided with a functioning webpage and are asked to refactor it.
-The User Story and Acceptance Critieria are set out as below:
+This website provides the platform for me to showcase the projects that I have worked on.
+
+Please be aware that I am still building my portfolio, so many of the project cards have placeholders in them (and are captioned as appropriate) 
+
+My portfolio was built to meet the below user story and acceptance criteria
 
 ### User Story
 
 ```
-AS A marketing agency
-I WANT a codebase that follows accessibility standards
-SO THAT our own site is optimized for search engines
+AS AN employer
+I WANT to view a potential employee's deployed portfolio of work samples
+SO THAT I can review samples of their work and assess whether they're a good candidate for an open position
 ```
 
 ### Acceptance Criteria
 
 ```
-GIVEN a webpage meets accessibility standards
-WHEN I view the source code
-THEN I find semantic HTML elements
+GIVEN I need to sample a potential employee's previous work:
 
-WHEN I view the structure of the HTML elements
-THEN I find that the elements follow a logical structure independent of styling and positioning
+WHEN I load their portfolio
+THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
 
-WHEN I view the icon and image elements
-THEN I find accessible alt attributes
+WHEN I click one of the links in the navigation
+THEN the UI scrolls to the corresponding section
 
-WHEN I view the heading attributes
-THEN they fall in sequential order
+WHEN I click on the link to the section about their work
+THEN the UI scrolls to a section with titled images of the developer's applications
 
-WHEN I view the title element
-THEN I find a concise, descriptive title
+WHEN I am presented with the developer's first application
+THEN that application's image should be larger in size than the others
+
+WHEN I click on the images of the applications
+THEN I am taken to that deployed application
+
+WHEN I resize the page or view the site on various screens and devices
+THEN I am presented with a responsive layout that adapts to my viewport
 ```
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Installation
@@ -46,7 +54,7 @@ Cloning the repo is the only step required.
 ## Usage
 
 Link to deployed website is found here:
-* https://hybee234.github.io/Challenge_1/
+* https://hybee234.github.io/Portfolio_Page/
   
 index.html and style.css files can be opened in Visual Studio Code
 
@@ -80,14 +88,17 @@ N/A
 
 ## Tests
 
-* Validate that navigation links in the header will bring you to relevant sections on the page
-* Validate that application CSS selectors and properties are consolidated and organised to follow semantic structure
-* Validate that the application CSS file is properly commented
-* Validate that the application deployed at the live URL (https://hybee234.github.io/Challenge_1/)
+* Validate that the website presents with the developer's name, a recent photo or avatar and links to sections about them, their projects and how to contact them
+* Validate that clicking on the links in the navigation takes you to the corresponding section on the same page (about me, projects, contact me)
+* Validate that the project section of the page has title images of the developer's projects
+* Validate that the first application's image is larger in size than the other applications
+* Validate that clicking on the images of the applications will bring you to the applications
+* Validate that the website has a responsive layout that adapts to various screens and devices. 
+* Validate that the application deployed at the live URL (https://hybee234.github.io/Portfolio_Page/)
 * Validate that the webpage loaded without errors
 * Validate that GitHub URL has been submitted
 * Validate that GitHub repository contains application code
-* Validate that the application resembles mock-up provided in the challenge instructions (at least 90%)
+* Validate that the application resembles mock-up provided in the challenge instructions
 * Validate that the GitHub repository has a unique name
 * Validate that the GitHub repostiory followed be practice for class/id naming conventions, indentation, quality comments, etc
 * Validate that the repository contains multiple descriptive commit messages

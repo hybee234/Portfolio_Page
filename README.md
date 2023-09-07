@@ -16,7 +16,7 @@ My portfolio was built to meet the below user story and acceptance criteria
 ```
 AS AN employer
 I WANT to view a potential employee's deployed portfolio of work samples
-SO THAT I can review samples of their work and assess whether they're a good candidate for an open position
+SO THAT I can review samples of their work and assess whether they're a good candidate for an open position.
 ```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

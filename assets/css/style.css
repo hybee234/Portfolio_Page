@@ -37,7 +37,7 @@ header p {
 }
 
 /*Navigation*/
-header nav {
+header nav {    
     background-color: var(--lighterbackground);
     border: 3px solid var(--lighterbackground);  
     border-radius: 10px;
@@ -58,9 +58,9 @@ main {
     flex-wrap: wrap;
 }
 
-/*---------------------------*/
-/*Container for project cards*/
-/*---------------------------*/
+/*-------------*/
+/*Project cards*/
+/*-------------*/
 
 /*project card container*/
 #project-cards {
@@ -82,7 +82,7 @@ main {
 
 /*make first project card span full width*/
 .card:first-child {
-    flex: 1 0 100%;
+    flex: 1 0 90%;
 }
 
 /*rest of projects to flex*/
@@ -93,6 +93,7 @@ main {
 /*project card headings*/
 
 .card h3 {
+    font-size: 2rem;
     position: relative;
     background-color: var(--objectbackground);
     border: 3px solid white;  
@@ -100,7 +101,6 @@ main {
     padding: 5px;
     margin: -30px 0px 0px 0px;
     color: var(--fontcolor);
-    font-weight: 1000;
     font-family:Arial, Helvetica, sans-serif;
     text-align: center;
 }
@@ -115,6 +115,7 @@ main {
 /*project card paragraphs*/
 .card p {
     padding: 10px;    
+    text-align: center;
 }
 
 /*format project card pre*/
@@ -122,9 +123,32 @@ pre {
     background-color: royalblue    
 }
 
-/*-------------------*/
-/*Container for aside*/
-/*-------------------*/
+/* Project card photos */
+.cardphoto {
+
+    height: auto;
+    width: 90%;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;     
+}
+
+
+/*blue border when hovering over cardphotos*/
+.cardphoto:hover {
+    border: 3px solid blue;
+}
+
+.cardphoto:active {
+    box-shadow: 10 5 5 blue
+
+}
+
+
+/*-----*/
+/*Aside*/
+/*-----*/
 
 aside {
     flex: 1 0 150px;   
@@ -160,9 +184,11 @@ aside p {
 
     margin-left: auto;
     margin-right: auto;
-    padding: 10px;     
-
+    margin-top: 10px;     
 }
+
+
+
 
 /*------*/
 /*Footer*/
@@ -175,15 +201,34 @@ footer {
     padding: 5px;
     margin: 0px 10px 20px 10px;
     background-color: var(--objectbackground);
+    height: 200px;
+
+    justify-content: right;
 }
 
 footer h4 {
     font-size: 2rem;
     padding: 10px;
+
 }
 
 .li {
     padding: 5px;    
+}
+
+/* Contact details a background */
+
+footer ul {
+    background-color: var(--lighterbackground);
+    border: 3px solid var(--lighterbackground);  
+    border-radius: 10px;
+    padding: 5px;
+    margin: 0px 5px 0px 20px;
+    color: darkblue;
+ 
+    width: 300px;
+
+
 }
 
 /*Add pseudo element before list items*/
